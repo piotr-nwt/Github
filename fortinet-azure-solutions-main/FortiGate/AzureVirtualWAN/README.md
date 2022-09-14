@@ -1,6 +1,5 @@
 # Fortigate NGFW for Microsoft Azure Virtual WAN
 
-test change
 
 ## Introduction
 
