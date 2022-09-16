@@ -67,7 +67,10 @@ FortiGate-VM and Fortinet Secure SD-WAN Native Integration with Azure Virtual WA
 
 ### Architecture 
 
-![Azure Virtual WAN design](images/vWAN-diagram.png)
+<p align="center">
+  <img src="images/vWAN-diagram.png" />
+</p>
+
 
 Setup consist of:
 - 2 FortiGate-VMs running in VMSS,  active-active FGSP HA setup
