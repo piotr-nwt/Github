@@ -59,6 +59,13 @@ In Scenario 2 Fortigates are deployed and run natively inside Azure vWAN HUB in 
 You can use the one-touch configurations from the Azure Virtual WAN portal to enable security policies and routing for North-South, East-West traffic, and internet-bound traffic. This allows them to apply FortiGate-VM’s extensive security services including IPS, application control, and SSL, as well as SD-WAN services such as application steering, to Virtual WAN traffic.
 The solution is scalable, load balanced and configured for active-active highly resilient deployments.
 
+FortiGate-VM and Fortinet Secure SD-WAN Native Integration with Azure Virtual WAN provides multiple benefits like :
+- Elasticity as this solution is scalable, load balanced and configured for active-active highly resilient deployments
+- Managed Application: FortiGate-VM is being deployed as Azure Managed Application. This eases administration overhead aspects of IaaS solutions providing automated deployment and configuration, automated updates and upgrades, as well as constant monitoring of the solution.
+- Best-in-class SD-WAN and [NGFW](https://www.fortinet.com/products/next-generation-firewall.html?utm_source=blog&utm_campaign=fortigate) sultion. FortiGate-VM is the only solution in the market that can provide those two functionalities in one offering for Azure vWAN HUB,
+
+
+
 ### Scenario 2
 
 ![Azure Virtual WAN design](images/scenario2.png)
