@@ -104,6 +104,8 @@ Setup consist of:
 ### Scenario 3
 ![Azure Virtual WAN design](images/vWAN_inbound-diagram.png)
 
+Scenario 3 combines integration of FortiGate-VMs in Azure vWAN HUB and Cloud Security Services Hub which consist of Active Passive HA FortiGate cluster with External & Internal Azure Load Balancer which is described in details [here](https://github.com/40net-cloud/fortinet-azure-solutions/tree/main/FortiGate/Active-Passive-ELB-ILB)
+
 ### Scenario 2
 
 ![Azure Virtual WAN design](images/scenario2.png)
