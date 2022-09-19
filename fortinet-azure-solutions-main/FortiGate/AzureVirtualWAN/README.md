@@ -102,7 +102,7 @@ Setup consist of:
 6. Active FGT accepts the return packet after inspection - s: 172.16.138.4 - d: 172.16.137.4
 
 ### Scenario 3
-![Azure Virtual WAN design](images/vwan_inbound-diagram.png)
+![Azure Virtual WAN design](images/vWAN_inbound-diagram.png)
 
 ### Scenario 2
 
