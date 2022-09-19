@@ -101,6 +101,9 @@ Setup consist of:
 5. Azure External Load Balancer sends the return packets to the same FGT-A thanks to session persistance - s: 172.16.138.4 - d: 172.16.137.4
 6. Active FGT accepts the return packet after inspection - s: 172.16.138.4 - d: 172.16.137.4
 
+### Scenario 3
+![Azure Virtual WAN design](images/vwan_inbound-diagram.png)
+
 ### Scenario 2
 
 ![Azure Virtual WAN design](images/scenario2.png)
