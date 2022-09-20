@@ -122,9 +122,12 @@ Scenario 4 uses the Azure Virtual WAN routing capabilities. Either using static 
 - [Static Routing](routing/)
 - [Dynamic routing using BGP Peering](bgppeering/)
 
-### Scenario 3
+### Scenario 5
 
-![Azure Virtual WAN design](images/scenario3.png)
+![Azure Virtual WAN design](images/vWAN_inbound_sdwan_diagram.png)
+
+
+### Scenario 5
 
 Scenario 3 combines the multiple hubs in different regions and uses the [Microsoft Global Transit Network](https://docs.microsoft.com/en-us/azure/virtual-wan/virtual-wan-global-transit-network-architecture) to transit between the different HUBs.
 
