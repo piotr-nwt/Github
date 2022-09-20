@@ -113,11 +113,11 @@ Therefore such combination of FortiGate vWAN Hub integration & Cloud Security Se
 
 
 
-### Scenario 2
+### Scenario 4
 
 ![Azure Virtual WAN design](images/scenario2.png)
 
-Scenario 2 uses the Azure Virtual WAN routing capabilities. Either using static routing or BGP dynamic routing. Both scenario's have separate page with more information.
+Scenario 4 uses the Azure Virtual WAN routing capabilities. Either using static routing or BGP dynamic routing. Both scenario's have separate page with more information.
 
 - [Static Routing](routing/)
 - [Dynamic routing using BGP Peering](bgppeering/)
