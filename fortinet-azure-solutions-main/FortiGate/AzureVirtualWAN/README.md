@@ -66,6 +66,7 @@ FortiGate-VM and Fortinet Secure SD-WAN Native Integration with Azure Virtual WA
 - Best-in-class SD-WAN and [NGFW](https://www.fortinet.com/products/next-generation-firewall.html?utm_source=blog&utm_campaign=fortigate) sultion. FortiGate-VM is the only solution in the market that can provide those two functionalities in one offering for Azure vWAN HUB,
 
 [Architecture](flows/architecture.md)
+
 [Flows](flows/flows.md)
 
 
