@@ -65,6 +65,9 @@ FortiGate-VM and Fortinet Secure SD-WAN Native Integration with Azure Virtual WA
 - Managed Application: FortiGate-VM is being deployed as Azure Managed Application. This eases administration overhead aspects of IaaS solutions providing automated deployment and configuration, automated updates and upgrades, as well as constant monitoring of the solution.
 - Best-in-class SD-WAN and [NGFW](https://www.fortinet.com/products/next-generation-firewall.html?utm_source=blog&utm_campaign=fortigate) sultion. FortiGate-VM is the only solution in the market that can provide those two functionalities in one offering for Azure vWAN HUB,
 
+- [Architecture](flows/architecture.md)
+- [Dynamic routing using BGP Peering](flows/flows.md)
+
 ### Architecture 
 
 <p align="center">
@@ -135,7 +138,7 @@ Scenario 5 consist of:
 
 As a result this is very scalable architecture which fits the needs of large Enterprise customers requiring high performance.
 
-
+### Scenario 6
 
 ### Scenario 5
 
