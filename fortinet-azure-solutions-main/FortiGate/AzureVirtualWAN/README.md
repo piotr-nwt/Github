@@ -126,6 +126,16 @@ Scenario 4 uses the Azure Virtual WAN routing capabilities. Either using static 
 
 ![Azure Virtual WAN design](images/vWAN_inbound_sdwan_diagram.png)
 
+For  Enterprise customers with substantial amount of resources deployed in Microsoft Azure and large number of on-premise branch officies which should be connected to Microsoft Azure vWAN HUB we created an architecture where different use-cases are handled by different FortiGate-VM HA clusters.
+
+Scenario 5 consist of:
+- Azure vWAN HUB with integrated FortiGate-VM which is used for North-South VNET to Internet and East-West VNET to VNET filtering
+- Cloud Security Services Hub (AP HA ELB/ILB FortiGate-VM cluster) which is used for secure publishing of services like HTTP, HTTPS, RDP etc. to the Internet
+- SDWAN/VPN Services Hub which is used for VPN/SDWAN connectivity between on-premise branch officies and Microsoft Azure
+
+As a result this is very scalable architecture which fits the needs of large Enterprise customers requiring high performance.
+
+
 
 ### Scenario 5
 
