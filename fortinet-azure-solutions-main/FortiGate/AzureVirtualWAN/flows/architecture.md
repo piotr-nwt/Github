@@ -1,7 +1,7 @@
 ### Architecture 
 
 <p align="center">
-  <img src="images/vWAN-diagram.png" />
+  <img src="../images/vWAN-diagram.png" />
 </p>
 
 

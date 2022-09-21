@@ -1,6 +1,6 @@
 ### Outbound Flows
 
-![Flows_outbound](images/Flows_outbound.png)
+![Flows_outbound](../images/Flows_outbound.png)
 
 1. Connection from client to the public IP of server. Azure routes the traffic using Intent Routing to the internal Load Balancer (which is running in managed subscription together with FGTs). - s: 172.16.137.4 - d: a.b.c.d
 2. (a/b)Azure Internal Load Balancer probes and send the packet to one of the active FGTs. - s: 172.16.137.4 - d: a.b.c.d
@@ -12,7 +12,7 @@
 
 ### East-West Flows
 
-![Flows_east-west](images/Flows_east-west.png)
+![Flows_east-west](../images/Flows_east-west.png)
 1. Connection from client to the private IP of server. Azure routes the traffic using Intent Routing to the internal Load Balancer - s: 172.16.137.4 - d: 172.16.138.4
 2. zure Internal Load Balancer can send the packet to any of the FGTs in AA cluster. In our diagram we assume that FGT-A received the packet for ease of understanding - s: 172.16.137.4 - d: 172.16.138.4
 3. FGT inspects the packet and when allowed sends the packet to the server - s: 172.16.137.4 - d: 172.16.138.4
