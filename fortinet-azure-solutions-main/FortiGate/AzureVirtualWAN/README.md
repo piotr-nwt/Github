@@ -9,7 +9,7 @@ Microsoft Azure Virtual WAN provides easy, unified and global connectivity. It s
 
 On this webpage we have created different scenarios on how to integrate FortiGate and Microsoft Azure Virtual WAN. All of these scenarios can be deployed using the associated ARM template into your Azure Subscription. Once connected and configured there is a webpage contained on this github that will convert the JSON configuration provided by Microsoft Azure Virtual WAN into a FortiGate VPN configuration that you can copy and paste into your device.
 
-* Scenario 1 : FortiGate branch connection into Virtual HUB
+* Scenario 1 : FortiGate branch connection into Virtual HUB using Azure VPN Gateway
 
 * Scenario 2 : FortiGate integration with Virtual HUB
 * Scenario 2 : FortiGate branch connection into Virtual HUB with peered VNETs secured by a FortiGate Active/Passive cluster
@@ -25,7 +25,7 @@ You'll be prompted to provide a minimum of 2 required variables as well as speci
 - PREFIX : This prefix will be prepended to each of the resources names created by the template for ease of use and visibility.
 - LOCATION : This is the Azure region where the deployment will be deployed.
 
-### Scenario 1
+### Scenario 1 FortiGate branch connection into Virtual HUB using Azure VPN Gateway
 
 ![Azure Virtual WAN design](images/scenario1.png)
 
@@ -38,6 +38,9 @@ To configure the first branch VPN tunnel the endpoint and private ip range of th
 
 - VPNSITE PREFIX : This prefix will be prepended to each of the resources regarding the VPN Branch connecting into Virtual WAN.
 - VPNSITE PUBLIC IP ADDRESS : This is the public IP address of the FortiGate device connecting into Virtual WAN.
+
+Details about Fortigate Azure Virtual WAN converter are provided [here]
+(https://github.com/piotr-nwt/Github/tree/master/fortinet-azure-solutions-main/FortiGate/AzureVirtualWAN#post-deployment)
 
 #### Azure Portal
 
