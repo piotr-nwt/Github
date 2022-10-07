@@ -39,7 +39,7 @@ To configure the first branch VPN tunnel the endpoint and private ip range of th
 - VPNSITE PREFIX : This prefix will be prepended to each of the resources regarding the VPN Branch connecting into Virtual WAN.
 - VPNSITE PUBLIC IP ADDRESS : This is the public IP address of the FortiGate device connecting into Virtual WAN.
 
-Details about Fortigate Azure Virtual WAN converter are provided 
+Details about post deployment and Fortigate Azure Virtual WAN converter are provided 
 [here](https://github.com/piotr-nwt/Github/tree/master/fortinet-azure-solutions-main/FortiGate/AzureVirtualWAN#post-deployment)
 
 #### Azure Portal
