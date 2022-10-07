@@ -82,7 +82,7 @@ You can find there information about the flows in this architecture as well as A
 This scenario can be used in situation when you would like to publish some services running in Azure like http/https to Internet using  Cloud Security Services Hub. As Public IPs used by FortiGates-VM running inside Azure vWAN HUB belongs to Microsoft and are kept in managed resource group belonging to Microsoft there is in no possibility to use use them to publish services.
 Therefore such combination of FortiGate vWAN Hub integration & Cloud Security Services Hub gives you possibility to overcome this limitation.
 
-
+In this architecture you can configure an Azure Virtual WAN hub router to peer with Fortigates in your Cloud Security Services Hub  using BGP Peering described [here](https://learn.microsoft.com/en-us/azure/virtual-wan/create-bgp-peering-hub-portal)
 
 
 ### Scenario 4 : FortiGate branch connection into Virtual HUB with peered VNETs secured by a FortiGate Active/Passive cluster
@@ -107,6 +107,7 @@ Scenario 5 consist of:
 
 As a result this is very scalable architecture which fits the needs of large Enterprise customers requiring high performance.
 
+In this architecture you can configure an Azure Virtual WAN hub router to peer with Fortigates in your Cloud Security Services Hub & SDWAN/VPN Services Hub  using BGP Peering described [here](https://learn.microsoft.com/en-us/azure/virtual-wan/create-bgp-peering-hub-portal)
 
 ## Post deployment
 
