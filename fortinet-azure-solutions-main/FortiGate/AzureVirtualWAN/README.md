@@ -11,10 +11,10 @@ On this webpage we have created different scenarios on how to integrate FortiGat
 
 * Scenario 1 : FortiGate branch connection into Virtual HUB using Azure VPN Gateway
 
-* Scenario 2 : FortiGate integration with Virtual HUB
-* Scenario 2 : FortiGate branch connection into Virtual HUB with peered VNETs secured by a FortiGate Active/Passive cluster
-* Scenario 3 : FortiGate branch connection into Virtual HUB and onto a Virtual HUB in a different region with a FortiGate branch connected
-* Scenario 4 : FortiGate branch connection into FortiGate in Azure using Virtual WAN to connect to different regions across the Microsoft global network
+* Scenario 2 : FortiGate integration inside Azure Virtual WAN HUB
+* Scenario 3 : FortiGate  integration inside Azure Virtual WAN HUB with additional Cloud Security Services Hub for publishing services to Internet 
+* Scenario 4 : FortiGate branch connection into Virtual HUB with peered VNETs secured by a FortiGate Active/Passive cluster
+* Scenario 5 : FortiGate  integration inside Azure Virtual WAN HUB with additional Cloud Security Services Hub for publishing services to Internet and SDWAN/VPN Services Hub for VPN connectivity
 
 ## Deployment
 
@@ -42,9 +42,6 @@ To configure the first branch VPN tunnel the endpoint and private ip range of th
 Details about Fortigate Azure Virtual WAN converter are provided 
 [here](https://github.com/piotr-nwt/Github/tree/master/fortinet-azure-solutions-main/FortiGate/AzureVirtualWAN#post-deployment)
 
-[here]
-()
-
 #### Azure Portal
 
 <a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2F40net-cloud%2Ffortinet-azure-solutions%2Fmain%2FFortiGate%2FAzureVirtualWAN%2Fscenario1%2Fazuredeploy.json" target="_blank">
@@ -58,7 +55,7 @@ Details about Fortigate Azure Virtual WAN converter are provided
 
 `cd ~/clouddrive/ && wget -qO- https://github.com/40net-cloud/fortinet-azure-solutions/archive/main.tar.gz | tar zxf - && cd ~/clouddrive/fortinet-azure-solutions-main/FortiGate/AzureVirtualWAN/scenario1/ && ./deploy.sh`
 
-### Scenario 2
+### Scenario 2 : FortiGate integration inside Azure Virtual WAN HUB
 ![Azure Virtual WAN design](images/overview1.png)
 
 In Scenario 2 FortiGate-VMs are deployed and run natively inside Azure vWAN HUB in Active/Active Cluster.  With this integration, you can use a Managed Application to deploy FortiGate-VM into the Azure Virtual WAN hub, where the FortiGate will be deployed and configured automatically to peer via BGP with the Virtual WAN hub router, extending next-generation firewall and secure SD-WAN capabilities to the cloud. To further simplify the process, FortiGate-VM can be deployed directly from Azure Marketplace, or can be deployed from the virtual hub via the Azure portal. 
@@ -76,7 +73,7 @@ FortiGate-VM and Fortinet Secure SD-WAN Native Integration with Azure Virtual WA
 [Flows](flows/flows.md)
 
 
-### Scenario 3
+### Scenario 3: FortiGate  integration inside Azure Virtual WAN HUB with additional Cloud Security Services Hub for publishing services to Internet 
 ![Azure Virtual WAN design](images/vWAN_inbound-diagram.png)
 
 Scenario 3 combines integration of FortiGate-VMs in Azure vWAN HUB and Cloud Security Services Hub which consist of Active Passive HA FortiGate cluster with External & Internal Azure Load Balancer that is described in details [here](https://github.com/40net-cloud/fortinet-azure-solutions/tree/main/FortiGate/Active-Passive-ELB-ILB).
@@ -88,7 +85,7 @@ Therefore such combination of FortiGate vWAN Hub integration & Cloud Security Se
 
 
 
-### Scenario 4
+### Scenario 4 : FortiGate branch connection into Virtual HUB with peered VNETs secured by a FortiGate Active/Passive cluster
 
 ![Azure Virtual WAN design](images/scenario2.png)
 
@@ -97,7 +94,7 @@ Scenario 4 uses the Azure Virtual WAN routing capabilities. Either using static 
 - [Static Routing](routing/)
 - [Dynamic routing using BGP Peering](bgppeering/)
 
-### Scenario 5
+### Scenario 5 : FortiGate  integration inside Azure Virtual WAN HUB with additional Cloud Security Services Hub for publishing services to Internet and SDWAN/VPN Services Hub for VPN connectivity
 
 ![Azure Virtual WAN design](images/vWAN_inbound_sdwan_diagram.png)
 
@@ -110,30 +107,6 @@ Scenario 5 consist of:
 
 As a result this is very scalable architecture which fits the needs of large Enterprise customers requiring high performance.
 
-### Scenario 6
-
-### Scenario 5
-
-Scenario 3 combines the multiple hubs in different regions and uses the [Microsoft Global Transit Network](https://docs.microsoft.com/en-us/azure/virtual-wan/virtual-wan-global-transit-network-architecture) to transit between the different HUBs.
-
-#### Azure Portal
-
-<a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2F40net-cloud%2Ffortinet-azure-solutions%2Fmain%2FFortiGate%2FAzureVirtualWAN%2Fscenario3%2Fazuredeploy.json" target="_blank">
-  <img src="https://raw.githubusercontent.com/Azure/azure-quickstart-templates/master/1-CONTRIBUTION-GUIDE/images/deploytoazure.svg?sanitize=true"/>
-</a>
-<a href="http://armviz.io/#/?load=https%3A%2F%2Fraw.githubusercontent.com%2F40net-cloud%2Ffortinet-azure-solutions$2Fmain%2FFortiGate%2FAzureVirtualWAN%2Fscenario3.json" target="_blank">
-  <img src="https://raw.githubusercontent.com/Azure/azure-quickstart-templates/master/1-CONTRIBUTION-GUIDE/images/visualizebutton.svg?sanitize=true"/>
-</a>
-
-#### Azure CLI
-
-`cd ~/clouddrive/ && wget -qO- https://github.com/40net-cloud/fortinet-azure-solutions/archive/main.tar.gz | tar zxf - && cd ~/clouddrive/fortinet-azure-solutions-main/FortiGate/AzureVirtualWAN/scenario3/ && ./deploy.sh`
-
-### Scenario 4
-
-Scenario 4 combines the multiple hubs in different regions and uses the [Microsoft Global Transit Network](https://docs.microsoft.com/en-us/azure/virtual-wan/virtual-wan-global-transit-network-architecture) to transit between the different HUBs from scenario 3 with the scenario 2 where you have the additional control of the traffic using the FortiGate inside each HUB.
-
-![Azure Virtual WAN design](images/scenario4.png)
 
 ## Post deployment
 
