@@ -39,8 +39,11 @@ To configure the first branch VPN tunnel the endpoint and private ip range of th
 - VPNSITE PREFIX : This prefix will be prepended to each of the resources regarding the VPN Branch connecting into Virtual WAN.
 - VPNSITE PUBLIC IP ADDRESS : This is the public IP address of the FortiGate device connecting into Virtual WAN.
 
-Details about Fortigate Azure Virtual WAN converter are provided [here]
-(https://github.com/piotr-nwt/Github/tree/master/fortinet-azure-solutions-main/FortiGate/AzureVirtualWAN#post-deployment)
+Details about Fortigate Azure Virtual WAN converter are provided 
+[here](https://github.com/piotr-nwt/Github/tree/master/fortinet-azure-solutions-main/FortiGate/AzureVirtualWAN#post-deployment)
+
+[here]
+()
 
 #### Azure Portal
 
@@ -66,7 +69,7 @@ The solution is scalable, load balanced and configured for active-active highly 
 FortiGate-VM and Fortinet Secure SD-WAN Native Integration with Azure Virtual WAN provides multiple benefits like :
 - Elasticity as this solution is scalable, load balanced and configured for active-active highly resilient deployments
 - Managed Application: FortiGate-VM is being deployed as Azure Managed Application. This eases administration overhead aspects of IaaS solutions providing automated deployment and configuration, automated updates and upgrades, as well as constant monitoring of the solution.
-- Best-in-class SD-WAN and [NGFW](https://www.fortinet.com/products/next-generation-firewall.html?utm_source=blog&utm_campaign=fortigate) sultion. FortiGate-VM is the only solution in the market that can provide those two functionalities in one offering for Azure vWAN HUB,
+- Best-in-class SD-WAN and [NGFW](https://www.fortinet.com/products/next-generation-firewall.html?utm_source=blog&utm_campaign=fortigate) solution. FortiGate-VM is the only solution in the market that can provide those two functionalities in one offering for Azure vWAN HUB,
 
 [Architecture](flows/architecture.md)
 
